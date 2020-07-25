@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--meta charset="utf-8"-->
+	<meta charset="windows-1252">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Admission Form</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+
+<header>
+		<img class="logo" src="newlogo.jpg">
+		<nav class="navbar navbar-style">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="micon">
+					<div class="nav navbar-nav navbar-right">
+					<button id="butt" onclick="home123();">Home</button>
+					<button id="butt" onclick="reg11();">Register Here		</button>
+						<button id="butt" onclick="registertab();">Show registration </button>
+					</div>
+					
+				</div>
+			</div>
+	</header>
+
+<div class="main" id="main">
+	<div id="pp">
+	<div class="principal">
+		<h4>Principal</h4>
+		<br>
+		
+
+			<img src="dr-mandlik.jpg">
+		<p>
+			The establishment of Shri Shiv Chhatrapati College in 1970 was a great landmark in the history of Higher Education in Western Pune District of Mahara shtra. The college is affiliated to University of Pune. Firstly, Arts and Commerce Degree Courses run by this college in the year 1984.
+		</p>
+	
+	</div>
+	<div class="president">
+		<h4>
+			President
+		</h4><br>
+		<img src="sanjay-kale.jpg">
+		<p>
+			Junnar Taluka Shivner Shikshan Prasarak Mandal was formed in 1970 with the sole aim of disseminating education to the masses. Shri Shiv Chhatrapati College was established in the same year at the foot of Shivneri fort- an eternal symbol of inspiration, persistence, enthusiasm and victory.
+		</p>
+	</div>
+</div>
+	<div id="str">
+		
+		<div id="box1">
+			<h3><u>Our Vision</u></h3><br>
+			<p>
+				<b>Strengthen</b><br>
+				 Vibrant, flexible and self-reliant institutional processes of higher learning along with an emphasis on value systems to generate prudent citizen of India with “can do attitude”.<br>
+
+				<b>Ensure</b> <br>Recognition as an International Leader in Holistic Education to achieve Global Competency in Corporate and Social World.<br>
+
+				<b>Provide</b> <br> Equal opportunities and ensure support without prejudice for gender, class,caste religion and economic status.<br>
+			</p>
+		</div>
+
+
+		<div id="box2">
+			<h3><u>Our Mission</u>
+			</h3><br>
+			<p>
+				To uplift the downtrodden, backward, tribal & weaker section of Junnar Block through higher education.<br>
+
+				To empower the illiterate, ignorant, uneducated masses by educating them & by creating in them social, political & cultural awareness.<br>
+
+				To give them confidence that they are the creators & not the creatures of their fate.<br>
+			</p>
+
+
+
+		</div>
+
+	</div>
+
+	<footer class="footer" >
+	<div class="foot1">
+		
+		<div class="f2">
+			<h4>Contact Us</h4>
+		<p>
+			Shri Shiv Chharatpati Arts,
+			Commerce and Science College, Junnar
+			Bodkenagar, Junnar-410502
+			Phone : 02132-222094
+			Email: info@junnarcollege.com
+			Webiste: www.junnarcollege.com
+		</p>
+		</div>
+		</div>
+	<div class="foot2">
+		<h4>JunnarCollege © Copyright 2019. Powered by: Brainmine Web Solutions Pvt. Ltd.</h4>
+	</div>
+	</footer>
+
+	</div>
+
+
+
+<div class="cont">
+	<div class="tab"id="tab"  style="display: none; padding: 30px;" > 
+		<h1 id="ad" > Admission Form </h1><hr>
+	
+		Full name  :<input type="text" name="fname" id="fname" class="form-control">
+		<span id="fullname" class="text-danger font-weight-bold"></span><br>
+
+
+			School name :<input type="text" name="sname" id="sname" class="form-control">
+			<span id="schooln" class="text-danger font-weight-bold"></span><br>
+
+			HSC Marks (in %) :<input type="text" name="marks" id="marks" class="form-control">
+			<span id="hsc" class="text-danger font-weight-bold"></span><br>
+
+			
+			Choose field:
+			<select name="field" name="category" id="side" style="color:rgb(115, 115, 115);"class="form-control">
+          
+			<option value="Null">-</option>
+          <option value="science">Science</option>
+          <option value="commerce">Commerce</option>
+          <option value="arts">Arts</option>
+          <option value="others">other</option>
+          
+        </select>
+
+        
+
+
+			adrress:<textarea  type="text" name="address" id="address" class="form-control"></textarea>
+			<span id="res-address" class="text-danger font-weight-bold"></span><br>
+
+		email :<input type="email" name="marks" id="emailid" class="form-control">
+		<span id="email-id" class="text-danger font-weight-bold"></span><br>
+			
+			<label style="color:rgb(115, 115, 115);" >Gender :<span ></span></label><br>
+        	<input type="radio" id="male" name="gender" value="male" checked> 
+        	<label for="male" >Male</label>
+  	    	<input type="radio" id="female" name="gender" value="female" >
+  			<label for="female">Female</label>
+  			<input type="radio" id="other" name="gender" value="other" >
+  			<label for="other">Other</label><br><br>
+			<br>
+        	<br>
+
+
+			<br>
+			<button  style="padding: 10px; width: 100%;" onclick="validation();" >verify form valid or not</button>
+			<br>
+			<button style="padding: 10px; width: 100%; "  id ="sub" onclick= "add();" >Confirm registration</button>
+		
+		
+</div></div>
+
+		<div class="tab tab-1" id="registration-table" style="display: none; padding: 30px;">
+
+
+<h1 id="ad" > Details of admissioned Students </h1><hr>
+		<table id="table">
+		<tr>
+			<th>Filled On</th>
+			<th>Full name</th>
+			<th>School name</th>
+			<th>HSC Marks</th>
+			<th>Side choosed</th>
+			<th>Resident Address</th>
+			<th>Email Id</th>
+			<th>Gender</th>
+		</tr>
+		
+
+	</table>
+	</div>
+
+		
+	</div>
+
+
+
+
+
+	
+
+
+
+
+		
+			
+		
+
+
+<script src="scriptad.js"></script>
+
+</body>
+</html>
